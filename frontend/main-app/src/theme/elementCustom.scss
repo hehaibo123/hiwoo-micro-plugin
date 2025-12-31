@@ -1,0 +1,122 @@
+:root {
+  --el-menu-item-height: 48px !important;
+  --el-dialog-padding-primary: 24px !important;
+  //--el-text-color-primary: #333333 !important;
+  --el-pagination-button-width: 28px !important;
+  --el-pagination-button-height: 28px !important;
+  --el-pagination-border-radius: 3px !important;
+  --el-tabs-header-height: inherit !important;
+  --el-card-padding: 16px !important;
+  --el-is-active-title-color: #1890FF;
+  --el-is-active-a-border: 4px solid #1890FF;
+  --el-is-active-text-color: #1890FF;
+  --el-menu-child-bg-color: #FFFFFF;
+  --el-is-active-navbar-bg-color: #ebf5ff;
+  --el-is-active-navbar-color: #1890FF;
+}
+
+.el-button {
+  padding: 8px 16px !important;
+}
+
+.el-button--default {
+  width: inherit !important;
+}
+
+.el-table--default .el-table__cell {
+  //padding: 12px 0px;
+}
+
+.el-table__body-wrapper .el-table-column--selection > .cell, .el-table__header-wrapper .el-table-column--selection > .cell {
+  padding: 2px 16px;
+}
+
+.el-dialog__header {
+  padding: 24px 24px 8px !important;
+  text-align: center !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #333333 !important;
+  margin-right: 0 !important;
+}
+
+.el-drawer__body {
+  padding: 0px 24px 14px !important;
+}
+
+.el-drawer__body > div {
+  height: 100% !important;
+}
+
+.el-drawer__footer {
+  padding: 10px 24px 24px !important;
+}
+
+.layout-pd {
+  height: calc(100vh - 85px) !important;
+
+}
+
+.el-pagination .el-select .el-input {
+  width: 110px !important;
+}
+
+.el-tabs {
+  --el-tabs-header-height: initial !important;
+}
+
+.is-opened > .el-sub-menu__title {
+  color: var(--el-is-active-title-color) !important;
+  font-weight: bold;
+}
+
+.is-active > a {
+  border-right: var(--el-is-active-a-border);
+  color: var(--el-is-active-text-color);
+}
+
+.el-menu--inline, .el-menu--popup {
+  background-color: var(--el-menu-child-bg-color) !important;
+}
+
+.el-button:focus {
+  color: var(--el-button-text-color) !important;
+  background-color: var(--el-button-bg-color) !important;
+  border-color: var(--el-button-border-color) !important;
+}
+
+.el-button:hover {
+  color: var(--el-button-hover-text-color) !important;
+  background-color: var(--el-button-hover-bg-color) !important;
+  border-color: var(--el-button-hover-border-color) !important;
+}
+
+.el-popconfirm__action {
+  display: flex;
+}
+
+
+.BMap_Marker {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.breadcrumb-box {
+  margin-top: 5px;
+}
+
+.el-aside {
+  .el-menu--collapse {
+    .el-menu-item {
+      svg {
+        margin-right: -16px !important;
+      }
+    }
+  }
+}
+
+.el-select__input {
+  margin-left: 0 !important;
+}
