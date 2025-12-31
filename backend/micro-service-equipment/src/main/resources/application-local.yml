@@ -1,0 +1,51 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: ${artifactId}
+  #数据源配置
+  datasource:
+    url: ${mysql.datasource.url}
+    username: ${mysql.datasource.username}
+    password: ${mysql.datasource.password}
+  data:
+    redis:
+      host: ${data.redis.host}
+      port: ${data.redis.port}
+      password: ${data.redis.password}
+      database: ${data.redis.database}
+      ssl:
+        bundle: ${data.redis.ssl.bundle}
+        enabled: ${data.redis.ssl.enabled}
+  flyway:
+    enabled: false
+    placeholder-prefix: "#{"          # 修改占位符前缀
+    placeholder-suffix: "}"           # 修改占位符后缀
+    baseline-on-migrate: true
+    baseline-version: 0
+    locations:
+      - classpath:base-db
+    # 启用占位符功能
+    placeholder-replacement: true
+    # 占位符值配置
+    placeholders:
+      # 数据库前缀
+      table_prefix:
+
+# 修改为springdata模式
+jetcache:
+  statIntervalMinutes: 1 #统计间隔分钟
+  areaInCacheName: false
+  local:
+    default: #默认area
+      type: caffeine
+      keyConvertor: fastjson
+  remote:
+    default:
+      type: redis.springdata # type由 redis.lettuce 变为了redis.springdata
+      keyConvertor: fastjson
+
+RSA:
+  publicKey: MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZMfPlqMV78lJoK5Mpdf2OYitiZNnV88v6Z6mtNTMA1fJDJluD2+Ha8Yb2u7x9eSZHK5xWz0s3I2/WGsixZPQFUBErIq1nny2L4off37xc6MHR0NHN/9XioEccp6IcUZh8VKwYSP/oln8aLmE6lqXiAZUBUknyZ2hhhWdZD1mRnwIDAQAB
+  privateKey: MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBANkx8+WoxXvyUmgrkyl1/Y5iK2Jk2dXzy/pnqa01MwDV8kMmW4Pb4drxhva7vH15JkcrnFbPSzcjb9YayLFk9AVQESsirWefLYvih9/fvFzowdHQ0c3/1eKgRxynohxRmHxUrBhI/+iWfxouYTqWpeIBlQFSSfJnaGGFZ1kPWZGfAgMBAAECgYAMPutD9fbZo9JcV+7lZecErldI3P4XgbY1+5ohRiTPrHdB9dTmqB6YfT/TljSagizvHC/cdpFyS6D7PuCi5iMINZ86sYMPVf81cXtQjwGZDhWpy4BIICZYQE78kuoGrYhwus2g0yY48z6H+0OunTH2RR69yhVLykQTz0GZzmdWjQJBAPK4uZNC7ThzjKjNrYKk6lzVcA6BulBrn6QqBO91CdXFicoelVhi98PkhCYT6rxd/n7nCq3VBRHSJbxX8PMucc0CQQDlE7vumJhyGbfqrdjUacOyem1Y66PBfqHf/l6Yp+03T7C4xz+sUCZwXnQymM616aTBbEu7coQWJifWwmaj1NUbAkAYl3613OIMBikKMUyTIAJexYFE9v/Zhg32pAs796+3aPw87jxTaDOSNWTuNrZhv2Q5l08NrbeFxrTsEDzpZptBAkAvhCplUW29rSwDF9B0LwQSz2ZDHY24IyY8qizBCYQhBvynN10zxuRSRqVfoWavQSmVnXsQBK71UTDOUUCtFwalAkBh46rEPFxQ3WbW+5PKZ7LJqEiO7ECQG6zEcgXPmhF+CwtnpNjGqSoYGml6cmksIXHSS0D5/BIeNrJxRYMdCvMJ
+

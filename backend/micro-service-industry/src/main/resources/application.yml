@@ -1,0 +1,83 @@
+spring:
+  profiles:
+    active: base
+
+logging:
+  level:
+    root: debug
+
+micro-application:
+  application-demo:
+    application-name: 行业综合管理插件
+    application-type: application
+    application-tag: industry-comprehensive
+    menus:
+      - menu-tag: industry-comprehensive
+        plugin-id: micro-app-industry
+        zh-cn: 行业插件
+        en: Industry Comprehensive Management Plugin
+        layout: left
+        menu-type: M
+        icon: Monitor
+        path: /industry-comprehensive
+        operates:
+          - operate-tag: view
+            zh-cn: 查看
+            en: View
+        menus:
+          - menu-tag: production-monitor
+            plugin-id: micro-app-industry
+            zh-cn: 生产监控
+            en: Production Monitor
+            layout: left
+            menu-type: C
+            path: /industry-comprehensive/production-monitor
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit
+          - menu-tag: production-line
+            plugin-id: micro-app-industry
+            zh-cn: 产线管理
+            en: Production Line Manage
+            layout: left
+            menu-type: C
+            path: /industry-comprehensive/production-line
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit
+          - menu-tag: order-manage
+            plugin-id: micro-app-industry
+            zh-cn: 订单管理
+            en: Order Manage
+            layout: left
+            menu-type: C
+            path: /industry-comprehensive/order-manage
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit
+          - menu-tag: schedule-manage
+            plugin-id: micro-app-industry
+            zh-cn: 排产管理
+            en: Schedule Manage
+            layout: left
+            menu-type: C
+            path: /industry-comprehensive/schedule-manage
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit

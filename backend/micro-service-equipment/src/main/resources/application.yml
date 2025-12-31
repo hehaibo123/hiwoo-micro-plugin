@@ -1,0 +1,83 @@
+spring:
+  profiles:
+    active: base
+
+logging:
+  level:
+    root: debug
+
+micro-application:
+  application-demo:
+    application-name: 设备综合管理插件
+    application-type: application
+    application-tag: equipment-comprehensive
+    menus:
+      - menu-tag: equipment-comprehensive
+        plugin-id: micro-app-equipment
+        zh-cn: 设备插件
+        en: Equipment Comprehensive Management Plugin
+        layout: left
+        menu-type: M
+        icon: Monitor
+        path: /equipment-comprehensive
+        operates:
+          - operate-tag: view
+            zh-cn: 查看
+            en: View
+        menus:
+          - menu-tag: equipment-monitor
+            plugin-id: micro-app-equipment
+            zh-cn: 设备监控
+            en: Equipment Monitor
+            layout: left
+            menu-type: C
+            path: /equipment-comprehensive/equipment-monitor
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit
+          - menu-tag: equipment-ledger
+            plugin-id: micro-app-equipment
+            zh-cn: 设备台账
+            en: Equipment Ledger
+            layout: left
+            menu-type: C
+            path: /equipment-comprehensive/equipment-ledger
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit
+          - menu-tag: equipment-inspection
+            plugin-id: micro-app-equipment
+            zh-cn: 设备点检
+            en: Equipment Inspection
+            layout: left
+            menu-type: C
+            path: /equipment-comprehensive/equipment-inspection
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit
+          - menu-tag: equipment-maintenance
+            plugin-id: micro-app-equipment
+            zh-cn: 设备保养
+            en: Open API
+            layout: left
+            menu-type: C
+            path: /equipment-comprehensive/equipment-maintenance
+            operates:
+              - operate-tag: view
+                zh-cn: 查看
+                en: View
+              - operate-tag: edit
+                zh-cn: 编辑
+                en: Edit

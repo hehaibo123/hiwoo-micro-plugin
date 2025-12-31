@@ -1,0 +1,11 @@
+@import 'element-plus/dist/index.css';
+@import './app.scss';
+@import 'common/transition.scss';
+@import './other.scss';
+@import './media/media.scss';
+@import './waves.scss';
+@import './dark.scss';
+div[data-name=micro-app-equipment] {
+  @import './element.scss';
+}
+

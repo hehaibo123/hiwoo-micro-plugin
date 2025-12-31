@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="vue-next-admin，vue-prev-admin，vue-admin-wonderful，后台管理系统一站式平台模板，希望可以帮你完成快速开发。vue2.x，vue2.0，vue2，vue3，vue3.x，vue3.0，CompositionAPI，typescript，element plus，element，plus，admin，wonderful，wonderful-next，vue-next-admin，vite，vite-admin，快速，高效，后台模板，后台系统，管理系统">
+    <meta name="description" content="vue-next-admin，基于 vue3 + CompositionAPI + typescript + vite + element plus，适配手机、平板、pc 的后台开源免费管理系统模板！vue-prev-admin，基于 vue2 +  element ui，适配手机、平板、pc 的后台开源免费管理系统模板！">
+    <link rel="icon" href="/micro-app-industry/favicon.ico">
+<!--    <title>HiWoo Demo</title>-->
+    <style type="text/css">
+        .BMap_cpyCtrl {
+            display: none;
+        }
+        .anchorBL {
+             display: none;
+         }
+    </style>
+  <script crossorigin="">import('/micro-app-industry/assets/js/index-f78015d5.js').finally(() => {
+            
+    const qiankunLifeCycle = window.moudleQiankunAppLifeCycles && window.moudleQiankunAppLifeCycles['micro-app-industry'];
+    if (qiankunLifeCycle) {
+      window.proxy.vitemount((props) => qiankunLifeCycle.mount(props));
+      window.proxy.viteunmount((props) => qiankunLifeCycle.unmount(props));
+      window.proxy.vitebootstrap(() => qiankunLifeCycle.bootstrap());
+      window.proxy.viteupdate((props) => qiankunLifeCycle.update(props));
+    }
+  
+          })</script>
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/@vue-a0c9c762.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/pinia-3f9bfdf1.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/vue-router-af518cee.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/@intlify-47b068ff.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/vue-ef9da795.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/vue-i18n-c9b1bbe4.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/js-cookie-edb2da2a.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/@element-plus-08d3834b.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/nprogress-295341a5.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/lodash-es-21c98b27.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/@vueuse-8a7d8108.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/@ctrl-f8748455.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/dayjs-d07908db.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/async-validator-dee29e8b.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/memoize-one-297ddbcb.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/escape-html-24b6865a.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/normalize-wheel-es-ed76fb12.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/@floating-ui-72671fae.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/element-plus-642f768c.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/mitt-f7ef348c.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/vue-grid-layout-e9eb4963.js">
+  <link rel="modulepreload" crossorigin="" href="/micro-app-industry/assets/js/vite-plugin-qiankun-928307a2.js">
+  <link rel="stylesheet" href="/micro-app-industry/assets/css/nprogress-771398e6.css">
+  <link rel="stylesheet" href="/micro-app-industry/assets/css/index-48130a33.css">
+</head>
+<body>
+<div id="app"></div>
+
+
+
+<script>
+  const createDeffer = (hookName) => {
+    const d = new Promise((resolve, reject) => {
+      window.proxy && (window.proxy[`vite${hookName}`] = resolve)
+    })
+    return props => d.then(fn => fn(props));
+  }
+  const bootstrap = createDeffer('bootstrap');
+  const mount = createDeffer('mount');
+  const unmount = createDeffer('unmount');
+  const update = createDeffer('update');
+
+  ;(global => {
+    global.qiankunName = 'micro-app-industry';
+    global['micro-app-industry'] = {
+      bootstrap,
+      mount,
+      unmount,
+      update
+    };
+  })(window);
+</script></body></html>
